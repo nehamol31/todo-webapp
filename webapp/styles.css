@@ -1,0 +1,130 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6b07a; /* Light crimson */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(173, 98, 51); /* Header color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(173, 98, 51); /* Footer color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.container {
+    flex: 1; /* Allows the container to expand and fill available space */
+    max-width: 800px;
+    margin: auto;
+    background: #edc9a7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Center content */
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 15px;
+    font-size: 1em;
+}
+
+#addTaskBtn {
+    padding: 15px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #e1ad6d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#addTaskBtn:hover {
+    background-color: #e1ad6d;
+}
+
+.tasks {
+    display: flex;
+    justify-content: center; /* Center task lists */
+    gap: 20px;
+}
+
+.task-list {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    min-width: 300px; /* Ensure list has some minimum width */
+}
+
+.task-list h2 {
+    margin-top: 0;
+    color: rgb(214, 156, 108); /* Header color for task lists */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1em; /* Larger list items */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+button {
+    background-color: #e49c6c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.edit {
+    background-color: #acd0ed;
+}
+
+button:hover {
+    opacity: 0.8;
+}
